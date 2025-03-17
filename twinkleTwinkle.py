@@ -58,3 +58,4 @@ instrument1.play_note(64, 1.0, 1.0)
 instrument1.play_note(62, 1.0, 1.0)
 instrument1.play_note(62, 1.0, 1.0)
 instrument1.play_note(60, 1.0, 2.0)
+

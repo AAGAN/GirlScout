@@ -1,8 +1,6 @@
 from scamp import *
-
 s = Session(tempo=120)
-
-instrument2 = s.new_part("Timpani half")
+instrument2 = s.new_part("flute")
 instrument1 = s.new_part("piano")
 
 instrument1.play_note(64, 1.0, 1.0)
