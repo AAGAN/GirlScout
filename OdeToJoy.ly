@@ -3,33 +3,25 @@
 \include "C:\Users\saraa\AppData\Local\SCAMP\scamp_lilypond_template.ly"
 \header
 {
-    title = "On the Code Again"
-    composer = "PHPrince"
+    title = "Ode To Joy"
 }
 \score
 {
+  \layout {
+    #(layout-set-staff-size 45)
+  }
     \new Score
     <<
         \context Staff = "piano"
-        \with
-        {
-            instrumentName = #"piano"
-        }
         {
             <<
                 \context Voice = "voiceOne"
                 {
                     \time 4/4
-                    \clef "treble"
                     e'4
                     e'4
                     f'4
                     g'4
-                }
-                \context Voice = "TempoVoice"
-                {
-                    \tempo 4=120
-                    s1
                 }
             >>
             <<
@@ -38,7 +30,7 @@
                     g'4
                     f'4
                     e'4
-                    d'4
+                    d'4 | \break
                 }
             >>
             <<
@@ -55,7 +47,7 @@
                 {
                     e'4
                     d'4
-                    d'2
+                    d'2 | \break
                 }
             >>
             <<
@@ -73,7 +65,7 @@
                     g'4
                     f'4
                     e'4
-                    d'4
+                    d'4 | \break
                 }
             >>
             <<
@@ -90,7 +82,7 @@
                 {
                     d'4
                     c'4
-                    c'2
+                    c'2 | \break
                 }
             >>
             <<
@@ -98,15 +90,6 @@
                 {
                     d'4
                     d'4
-                    e'4
-                    c'4
-                }
-            >>
-            <<
-                \context Voice = "voiceOne"
-                {
-                    d'4
-                    f'4
                     e'4
                     c'4
                 }
@@ -117,6 +100,15 @@
                     d'4
                     f'4
                     e'4
+                    c'4 | \break
+                }
+            >>
+            <<
+                \context Voice = "voiceOne"
+                {
+                    d'4
+                    f'4
+                    e'4
                     d'4
                 }
             >>
@@ -125,7 +117,7 @@
                 {
                     c'4
                     d'4
-                    g'2
+                    g'2 | \break
                 }
             >>
             <<
@@ -143,7 +135,7 @@
                     g'4
                     f'4
                     e'4
-                    d'4
+                    d'4 | \break
                 }
             >>
             <<

@@ -3,41 +3,35 @@
 \include "C:\Users\saraa\AppData\Local\SCAMP\scamp_lilypond_template.ly"
 \header
 {
-    title = "Thunder Code"
-    composer = "The Rubytles"
+    title = "Twinkle Twinkle Little Star"
 }
 \score
 {
+  \layout {
+    #(layout-set-staff-size 60)
+  }
     \new Score
     <<
         \context Staff = "piano"
-        \with
-        {
-            instrumentName = #"piano"
-        }
+        
         {
             <<
                 \context Voice = "voiceOne"
                 {
                     \time 4/4
-                    \clef "treble"
                     c'4
                     c'4
                     g'4
                     g'4
                 }
-                \context Voice = "TempoVoice"
-                {
-                    \tempo 4=120
-                    s1
-                }
+                
             >>
             <<
                 \context Voice = "voiceOne"
                 {
                     a'4
                     a'4
-                    g'2
+                    g'2 | \break
                 }
             >>
             <<
@@ -54,7 +48,7 @@
                 {
                     d'4
                     d'4
-                    c'2
+                    c'2 | \break
                 }
             >>
             <<
@@ -71,7 +65,7 @@
                 {
                     e'4
                     e'4
-                    d'2
+                    d'2 | \break
                 }
             >>
             <<
@@ -88,7 +82,7 @@
                 {
                     e'4
                     e'4
-                    d'2
+                    d'2 | \break
                 }
             >>
             <<
@@ -105,7 +99,7 @@
                 {
                     a'4
                     a'4
-                    g'2
+                    g'2 | \break
                 }
             >>
             <<

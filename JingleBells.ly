@@ -3,32 +3,24 @@
 \include "C:\Users\saraa\AppData\Local\SCAMP\scamp_lilypond_template.ly"
 \header
 {
-    title = "Goodbye Yellow Brick Code"
-    composer = "PHPrince"
+    title = "Jingle Bells"
 }
 \score
 {
+   \layout {
+    #(layout-set-staff-size 45)
+  }
     \new Score
     <<
         \context Staff = "piano"
-        \with
-        {
-            instrumentName = #"piano"
-        }
         {
             <<
                 \context Voice = "voiceOne"
                 {
                     \time 4/4
-                    \clef "treble"
                     e'4
                     e'4
                     e'2
-                }
-                \context Voice = "TempoVoice"
-                {
-                    \tempo 4=120
-                    s1
                 }
             >>
             <<
@@ -36,7 +28,7 @@
                 {
                     e'4
                     e'4
-                    e'2
+                    e'2 | \break
                 }
             >>
             <<
@@ -51,7 +43,7 @@
             <<
                 \context Voice = "voiceOne"
                 {
-                    e'1
+                    e'1 | \break
                 }
             >>
             <<
@@ -70,7 +62,7 @@
                     e'4
                     e'4
                     e'8
-                    e'8
+                    e'8 | \break
                 }
             >>
             <<
@@ -86,7 +78,7 @@
                 \context Voice = "voiceOne"
                 {
                     d'2
-                    g'2
+                    g'2 | \break
                 }
             >>
             <<
@@ -102,7 +94,7 @@
                 {
                     e'4
                     e'4
-                    e'2
+                    e'2 | \break
                 }
             >>
             <<
@@ -117,7 +109,7 @@
             <<
                 \context Voice = "voiceOne"
                 {
-                    e'1
+                    e'1 | \break
                 }
             >>
             <<
@@ -136,7 +128,7 @@
                     e'4
                     e'4
                     e'8
-                    e'8
+                    e'8 | \break
                 }
             >>
             <<
